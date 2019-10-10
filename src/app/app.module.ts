@@ -39,7 +39,7 @@ import {WeatherService} from './weather.service';
       },
       deps: []
     }*/
-    { provide: NG_ENTITY_SERVICE_CONFIG, useValue: { baseUrl: 'https://dataservice.accuweather.com' }}
+    { provide: NG_ENTITY_SERVICE_CONFIG, useValue: { baseUrl: 'https://dataservice.accuweather.com/locations/v1/cities' }}
   ],
   bootstrap: [AppComponent]
 })

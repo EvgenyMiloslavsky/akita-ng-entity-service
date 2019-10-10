@@ -24,8 +24,10 @@ export class WeatherComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.weatherService.get('', {params: this.params, url: '/locations/v1/cities/search'}).subscribe();
-    console.log("Log", this.weather$);
+    this.weatherService.get('', {params: this.params}).subscribe((result) => {
+      console.log('>>>', result);
+    });
+    console.log('Log', this.weather$);
   }
 
 }
